@@ -15,6 +15,7 @@
   <name>springapi</name>
   <description>springapi</description>
   <properties>
+    <start-class>com.example.springapi.application</start-class>
     <java.version>1.8</java.version>
   </properties>
   <dependencies>

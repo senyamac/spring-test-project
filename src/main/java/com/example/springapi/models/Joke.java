@@ -1,11 +1,11 @@
-package com.example.springapi;
+package com.example.springapi.models;
 
+import com.example.springapi.util.AppConst;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Joke {
-  public static final String SINGLE = "single";
-  public static final String TWOPART = "twopart";
+
 
   private String category;
   private String type;
@@ -53,26 +53,26 @@ public class Joke {
     this.delivery = delivery;
   }
 
-  public String toStingOnlyJoke() {
+  public String getJokeString() {
     switch (type) {
-      case SINGLE:
-        return "Joke: " + joke;
-      case TWOPART:
-        return "Joke: " + setup + " - " + delivery;
+      case AppConst.SINGLE:
+        return joke;
+      case AppConst.TWOPART:
+        return setup + " - " + delivery;
       default:
-        return "Joke is empty";
+        return "";
     }
   }
 
   public String toString() {
     switch (type) {
-      case SINGLE:
+      case AppConst.SINGLE:
         return "Joke: " + joke +
-            " { type: " + type +
+            "\nAdditions: { type: " + type +
             ", category: " + category + " }";
-      case TWOPART:
+      case AppConst.TWOPART:
         return "Joke: " + setup + " - " + delivery +
-            " { type: " + type +
+            "\nAdditions: { type: " + type +
             ", category: " + category + " }";
       default:
         return "Joke is empty";
