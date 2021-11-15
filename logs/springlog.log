@@ -1,0 +1,224 @@
+2021-11-15 09:26:12 [main] INFO  c.e.springapi.SpringapiApplication - Starting SpringapiApplication using Java 11.0.13 on n106435 with PID 20940 (C:\repos\springapi\target\classes started by amayachk in C:\repos\springapi)
+2021-11-15 09:26:12 [main] DEBUG c.e.springapi.SpringapiApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-15 09:26:12 [main] INFO  c.e.springapi.SpringapiApplication - No active profile set, falling back to default profiles: default
+2021-11-15 09:26:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-15 09:26:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2021-11-15 09:26:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-15 09:26:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-15 09:26:13 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-15 09:26:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-15 09:26:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-15 09:26:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 820 ms
+2021-11-15 09:26:13 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-15 09:26:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-15 09:26:13 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-15 09:26:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-15 09:26:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-15 09:26:13 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-11-15 09:26:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-15 09:26:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-15 09:26:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-15 09:26:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-11-15 09:26:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-15 09:26:14 [main] INFO  c.e.springapi.SpringapiApplication - Started SpringapiApplication in 2.088 seconds (JVM running for 2.774)
+2021-11-15 09:26:18 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-15 09:26:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-15 09:26:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-11-15 09:26:18 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Programming",
+    "type": "twopart",
+    "setup": "What do you get if you lock a monkey in a room with a typewriter for 8 hours?",
+    "delivery": "A regular expression.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 26,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 09:26:18 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Joke: What do you get if you lock a monkey in a room with a typewriter for 8 hours? - A regular expression.
+Additions: { id: 26, type: twopart, category: Programming }
+2021-11-15 09:26:18 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Joke length: 101
+2021-11-15 09:26:18 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Reversed joke: .noisserpxe raluger A - ?sruoh 8 rof retirwepyt a htiw moor a ni yeknom a kcol uoy fi teg uoy od tahW
+2021-11-15 09:26:56 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Programming",
+    "type": "twopart",
+    "setup": "Why did the functional programmer get thrown out of school?",
+    "delivery": "Because he refused to take classes.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 48,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 09:26:56 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Joke: Why did the functional programmer get thrown out of school? - Because he refused to take classes.
+Additions: { id: 48, type: twopart, category: Programming }
+2021-11-15 09:26:56 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Joke length: 97
+2021-11-15 09:26:56 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Reversed joke: .sessalc ekat ot desufer eh esuaceB - ?loohcs fo tuo nworht teg remmargorp lanoitcnuf eht did yhW
+2021-11-15 09:27:15 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "Why did the koala get rejected?",
+    "delivery": "Because he did not have any koalafication.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 192,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 09:27:15 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Joke: Why did the koala get rejected? - Because he did not have any koalafication.
+Additions: { id: 192, type: twopart, category: Pun }
+2021-11-15 09:27:15 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Joke length: 76
+2021-11-15 09:27:15 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Reversed joke: .noitacifalaok yna evah ton did eh esuaceB - ?detcejer teg alaok eht did yhW
+2021-11-15 09:27:15 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Dark",
+    "type": "twopart",
+    "setup": "My wife divorced me so I stole her wheelchair.",
+    "delivery": "Guess who came crawling back.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 85,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 09:27:15 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke: My wife divorced me so I stole her wheelchair. - Guess who came crawling back.
+Additions: { id: 85, type: twopart, category: Dark }
+2021-11-15 09:27:15 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke length: 78
+2021-11-15 09:27:15 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Reversed joke: .kcab gnilwarc emac ohw sseuG - .riahcleehw reh elots I os em decrovid efiw yM
+2021-11-15 09:27:16 [http-nio-8080-exec-4] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Programming",
+    "type": "twopart",
+    "setup": "How do you know God is a shitty programmer?",
+    "delivery": "He wrote the OS for an entire universe, but didn't leave a single useful comment.",
+    "flags": {
+        "nsfw": false,
+        "religious": true,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": true
+    },
+    "id": 19,
+    "safe": false,
+    "lang": "en"
+}
+2021-11-15 09:27:16 [http-nio-8080-exec-4] DEBUG c.e.s.controller.MyRestController - Joke: How do you know God is a shitty programmer? - He wrote the OS for an entire universe, but didn't leave a single useful comment.
+Additions: { id: 19, type: twopart, category: Programming }
+2021-11-15 09:27:16 [http-nio-8080-exec-4] DEBUG c.e.s.controller.MyRestController - Joke length: 127
+2021-11-15 09:27:16 [http-nio-8080-exec-4] DEBUG c.e.s.controller.MyRestController - Reversed joke: .tnemmoc lufesu elgnis a evael t'ndid tub ,esrevinu eritne na rof SO eht etorw eH - ?remmargorp yttihs a si doG wonk uoy od woH
+2021-11-15 09:27:17 [http-nio-8080-exec-5] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "What time did the man go to the dentist?",
+    "delivery": "Tooth hurt-y.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 125,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 09:27:17 [http-nio-8080-exec-5] DEBUG c.e.s.controller.MyRestController - Joke: What time did the man go to the dentist? - Tooth hurt-y.
+Additions: { id: 125, type: twopart, category: Pun }
+2021-11-15 09:27:17 [http-nio-8080-exec-5] DEBUG c.e.s.controller.MyRestController - Joke length: 56
+2021-11-15 09:27:17 [http-nio-8080-exec-5] DEBUG c.e.s.controller.MyRestController - Reversed joke: .y-truh htooT - ?tsitned eht ot og nam eht did emit tahW
+2021-11-15 09:27:17 [http-nio-8080-exec-6] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "I just saw my wife trip over and drop a basket full of ironed clothes.",
+    "delivery": "I watched it all unfold.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "safe": true,
+    "id": 281,
+    "lang": "en"
+}
+2021-11-15 09:27:17 [http-nio-8080-exec-6] DEBUG c.e.s.controller.MyRestController - Joke: I just saw my wife trip over and drop a basket full of ironed clothes. - I watched it all unfold.
+Additions: { id: 281, type: twopart, category: Pun }
+2021-11-15 09:27:17 [http-nio-8080-exec-6] DEBUG c.e.s.controller.MyRestController - Joke length: 97
+2021-11-15 09:27:17 [http-nio-8080-exec-6] DEBUG c.e.s.controller.MyRestController - Reversed joke: .dlofnu lla ti dehctaw I - .sehtolc denori fo lluf teksab a pord dna revo pirt efiw ym was tsuj I
+2021-11-15 09:27:18 [http-nio-8080-exec-8] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Dark",
+    "type": "twopart",
+    "setup": "What do an orgasm and a pulse have in common?",
+    "delivery": "I don't care if she has one.",
+    "flags": {
+        "nsfw": true,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": true
+    },
+    "id": 101,
+    "safe": false,
+    "lang": "en"
+}
+2021-11-15 09:27:18 [http-nio-8080-exec-8] DEBUG c.e.s.controller.MyRestController - Joke: What do an orgasm and a pulse have in common? - I don't care if she has one.
+Additions: { id: 101, type: twopart, category: Dark }
+2021-11-15 09:27:18 [http-nio-8080-exec-8] DEBUG c.e.s.controller.MyRestController - Joke length: 76
+2021-11-15 09:27:18 [http-nio-8080-exec-8] DEBUG c.e.s.controller.MyRestController - Reversed joke: .eno sah ehs fi erac t'nod I - ?nommoc ni evah eslup a dna msagro na od tahW
+2021-11-15 09:27:19 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "What do you call a cow with no legs?",
+    "delivery": "Ground beef.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 196,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 09:27:19 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Joke: What do you call a cow with no legs? - Ground beef.
+Additions: { id: 196, type: twopart, category: Pun }
+2021-11-15 09:27:19 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Joke length: 51
+2021-11-15 09:27:19 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Reversed joke: .feeb dnuorG - ?sgel on htiw woc a llac uoy od tahW

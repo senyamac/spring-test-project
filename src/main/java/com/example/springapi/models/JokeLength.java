@@ -1,15 +1,12 @@
 package com.example.springapi.models;
 
+import com.example.springapi.interfaces.IJokeAction;
+import lombok.NonNull;
+
 public class JokeLength implements IJokeAction {
-  private Joke joke;
-
-  public JokeLength(Joke joke) {
-    this.joke = joke;
-  }
-
   @Override
-  public void actionWithJoke() {
-    String strJoke = joke.getJokeString();
-    System.out.println("Joke length: " + strJoke.length());
+  public String actionWithJoke(@NonNull Joke joke) {
+    String strJoke = joke.getJoke();
+    return "Joke length: " + strJoke.length();
   }
 }

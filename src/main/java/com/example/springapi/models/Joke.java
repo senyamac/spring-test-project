@@ -1,59 +1,41 @@
+/*
+ * Copyright Avaya Inc., All Rights Reserved. THIS IS UNPUBLISHED PROPRIETARY SOURCE CODE OF Avaya
+ * Inc. The copyright notice above does not evidence any actual or intended publication of such
+ * source code. Some third-party source code components may have been modified from their original
+ * versions by Avaya Inc. The modifications are Copyright Avaya Inc., All Rights Reserved. Avaya -
+ * Confidential & Restricted. May not be distributed further without written permission of the Avaya
+ * owner.
+ */
+
 package com.example.springapi.models;
 
 import com.example.springapi.util.AppConst;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import lombok.Data;
+import org.springframework.stereotype.Component;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Data
+@Entity
+@Table(name = "jokes")
 public class Joke {
-
-
+  @Id
+  private int id;
+  @Column(name="category")
   private String category;
+  @Column(name="type")
   private String type;
+  @Column(name="joke")
   private String joke;
   private String setup;
   private String delivery;
 
-  public String getType() {
-    return type;
-  }
-
-  public void setType(String type) {
-    this.type = type;
-  }
-
-  public String getCategory() {
-    return category;
-  }
-
-  public void setCategory(String category) {
-    this.category = category;
-  }
 
   public String getJoke() {
-    return joke;
-  }
-
-  public void setJoke(String joke) {
-    this.joke = joke;
-  }
-
-  public String getSetup() {
-    return setup;
-  }
-
-  public void setSetup(String setup) {
-    this.setup = setup;
-  }
-
-  public String getDelivery() {
-    return delivery;
-  }
-
-  public void setDelivery(String delivery) {
-    this.delivery = delivery;
-  }
-
-  public String getJokeString() {
     switch (type) {
       case AppConst.SINGLE:
         return joke;
@@ -68,11 +50,11 @@ public class Joke {
     switch (type) {
       case AppConst.SINGLE:
         return "Joke: " + joke +
-            "\nAdditions: { type: " + type +
+            "\nAdditions: { id: " + id + ", type: " + type +
             ", category: " + category + " }";
       case AppConst.TWOPART:
         return "Joke: " + setup + " - " + delivery +
-            "\nAdditions: { type: " + type +
+            "\nAdditions: { id: " + id + ", type: " + type +
             ", category: " + category + " }";
       default:
         return "Joke is empty";
