@@ -19,7 +19,7 @@
 
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
       <!-- rollover daily -->
-      <fileNamePattern>${DEV_HOME}/archived/springlog.%d{yyyy-MM-dd}.%i.log
+      <fileNamePattern>${LOGS}/archived/springlog.%d{yyyy-MM-dd}.%i.log
       </fileNamePattern>
       <timeBasedFileNamingAndTriggeringPolicy
         class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
