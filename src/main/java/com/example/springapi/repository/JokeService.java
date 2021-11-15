@@ -11,12 +11,11 @@ package com.example.springapi.repository;
 
 import com.example.springapi.models.Joke;
 import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class JokeService {
-  private final JokeRepository jokeRepository;
+  private JokeRepository jokeRepository;
 
   public JokeService(JokeRepository jokeRepository) {
     this.jokeRepository = jokeRepository;

@@ -16,7 +16,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import lombok.Data;
-import org.springframework.stereotype.Component;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data

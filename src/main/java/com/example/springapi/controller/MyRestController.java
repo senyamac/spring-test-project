@@ -3,7 +3,6 @@ package com.example.springapi.controller;
 import com.example.springapi.models.Joke;
 import com.example.springapi.models.JokeLength;
 import com.example.springapi.models.ReverseJoke;
-import com.example.springapi.repository.JokeRepository;
 import com.example.springapi.repository.JokeService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -14,10 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -74,8 +70,8 @@ public class MyRestController {
 
   @RequestMapping("/jokebase")
   public ResponseEntity<List<Joke>> getAllJokes() {
-    List<Joke> jokes = new ArrayList<Joke>();
-    jokeService.findAll().forEach(jokes::add);
+    List<Joke> jokes;
+    jokes = new ArrayList<>(jokeService.findAll());
 
     if (jokes.isEmpty()) {
       return new ResponseEntity<>(HttpStatus.NO_CONTENT);

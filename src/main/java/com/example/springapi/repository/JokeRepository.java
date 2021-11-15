@@ -12,8 +12,6 @@ package com.example.springapi.repository;
 import com.example.springapi.models.Joke;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 
 public interface JokeRepository  extends JpaRepository<Joke, Integer> {
   List<Joke> findByType(String type);
