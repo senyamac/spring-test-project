@@ -9,10 +9,10 @@
 
 package com.example.springapi.repository;
 
-import com.example.springapi.models.Joke;
+import com.example.springapi.models.JokeEntity;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface JokeRepository  extends JpaRepository<Joke, Integer> {
-  List<Joke> findByType(String type);
+public interface JokeRepository  extends JpaRepository<JokeEntity, Integer> {
+  List<JokeEntity> findByType(String type);
 }

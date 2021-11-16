@@ -1,0 +1,922 @@
+2021-11-15 09:26:12 [main] INFO  c.e.springapi.SpringapiApplication - Starting SpringapiApplication using Java 11.0.13 on n106435 with PID 20940 (C:\repos\springapi\target\classes started by amayachk in C:\repos\springapi)
+2021-11-15 09:26:12 [main] DEBUG c.e.springapi.SpringapiApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-15 09:26:12 [main] INFO  c.e.springapi.SpringapiApplication - No active profile set, falling back to default profiles: default
+2021-11-15 09:26:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-15 09:26:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2021-11-15 09:26:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-15 09:26:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-15 09:26:13 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-15 09:26:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-15 09:26:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-15 09:26:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 820 ms
+2021-11-15 09:26:13 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-15 09:26:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-15 09:26:13 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-15 09:26:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-15 09:26:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-15 09:26:13 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-11-15 09:26:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-15 09:26:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-15 09:26:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-15 09:26:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-11-15 09:26:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-15 09:26:14 [main] INFO  c.e.springapi.SpringapiApplication - Started SpringapiApplication in 2.088 seconds (JVM running for 2.774)
+2021-11-15 09:26:18 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-15 09:26:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-15 09:26:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-11-15 09:26:18 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Programming",
+    "type": "twopart",
+    "setup": "What do you get if you lock a monkey in a room with a typewriter for 8 hours?",
+    "delivery": "A regular expression.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 26,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 09:26:18 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Joke: What do you get if you lock a monkey in a room with a typewriter for 8 hours? - A regular expression.
+Additions: { id: 26, type: twopart, category: Programming }
+2021-11-15 09:26:18 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Joke length: 101
+2021-11-15 09:26:18 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Reversed joke: .noisserpxe raluger A - ?sruoh 8 rof retirwepyt a htiw moor a ni yeknom a kcol uoy fi teg uoy od tahW
+2021-11-15 09:26:56 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Programming",
+    "type": "twopart",
+    "setup": "Why did the functional programmer get thrown out of school?",
+    "delivery": "Because he refused to take classes.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 48,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 09:26:56 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Joke: Why did the functional programmer get thrown out of school? - Because he refused to take classes.
+Additions: { id: 48, type: twopart, category: Programming }
+2021-11-15 09:26:56 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Joke length: 97
+2021-11-15 09:26:56 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Reversed joke: .sessalc ekat ot desufer eh esuaceB - ?loohcs fo tuo nworht teg remmargorp lanoitcnuf eht did yhW
+2021-11-15 09:27:15 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "Why did the koala get rejected?",
+    "delivery": "Because he did not have any koalafication.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 192,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 09:27:15 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Joke: Why did the koala get rejected? - Because he did not have any koalafication.
+Additions: { id: 192, type: twopart, category: Pun }
+2021-11-15 09:27:15 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Joke length: 76
+2021-11-15 09:27:15 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Reversed joke: .noitacifalaok yna evah ton did eh esuaceB - ?detcejer teg alaok eht did yhW
+2021-11-15 09:27:15 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Dark",
+    "type": "twopart",
+    "setup": "My wife divorced me so I stole her wheelchair.",
+    "delivery": "Guess who came crawling back.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 85,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 09:27:15 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke: My wife divorced me so I stole her wheelchair. - Guess who came crawling back.
+Additions: { id: 85, type: twopart, category: Dark }
+2021-11-15 09:27:15 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke length: 78
+2021-11-15 09:27:15 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Reversed joke: .kcab gnilwarc emac ohw sseuG - .riahcleehw reh elots I os em decrovid efiw yM
+2021-11-15 09:27:16 [http-nio-8080-exec-4] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Programming",
+    "type": "twopart",
+    "setup": "How do you know God is a shitty programmer?",
+    "delivery": "He wrote the OS for an entire universe, but didn't leave a single useful comment.",
+    "flags": {
+        "nsfw": false,
+        "religious": true,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": true
+    },
+    "id": 19,
+    "safe": false,
+    "lang": "en"
+}
+2021-11-15 09:27:16 [http-nio-8080-exec-4] DEBUG c.e.s.controller.MyRestController - Joke: How do you know God is a shitty programmer? - He wrote the OS for an entire universe, but didn't leave a single useful comment.
+Additions: { id: 19, type: twopart, category: Programming }
+2021-11-15 09:27:16 [http-nio-8080-exec-4] DEBUG c.e.s.controller.MyRestController - Joke length: 127
+2021-11-15 09:27:16 [http-nio-8080-exec-4] DEBUG c.e.s.controller.MyRestController - Reversed joke: .tnemmoc lufesu elgnis a evael t'ndid tub ,esrevinu eritne na rof SO eht etorw eH - ?remmargorp yttihs a si doG wonk uoy od woH
+2021-11-15 09:27:17 [http-nio-8080-exec-5] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "What time did the man go to the dentist?",
+    "delivery": "Tooth hurt-y.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 125,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 09:27:17 [http-nio-8080-exec-5] DEBUG c.e.s.controller.MyRestController - Joke: What time did the man go to the dentist? - Tooth hurt-y.
+Additions: { id: 125, type: twopart, category: Pun }
+2021-11-15 09:27:17 [http-nio-8080-exec-5] DEBUG c.e.s.controller.MyRestController - Joke length: 56
+2021-11-15 09:27:17 [http-nio-8080-exec-5] DEBUG c.e.s.controller.MyRestController - Reversed joke: .y-truh htooT - ?tsitned eht ot og nam eht did emit tahW
+2021-11-15 09:27:17 [http-nio-8080-exec-6] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "I just saw my wife trip over and drop a basket full of ironed clothes.",
+    "delivery": "I watched it all unfold.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "safe": true,
+    "id": 281,
+    "lang": "en"
+}
+2021-11-15 09:27:17 [http-nio-8080-exec-6] DEBUG c.e.s.controller.MyRestController - Joke: I just saw my wife trip over and drop a basket full of ironed clothes. - I watched it all unfold.
+Additions: { id: 281, type: twopart, category: Pun }
+2021-11-15 09:27:17 [http-nio-8080-exec-6] DEBUG c.e.s.controller.MyRestController - Joke length: 97
+2021-11-15 09:27:17 [http-nio-8080-exec-6] DEBUG c.e.s.controller.MyRestController - Reversed joke: .dlofnu lla ti dehctaw I - .sehtolc denori fo lluf teksab a pord dna revo pirt efiw ym was tsuj I
+2021-11-15 09:27:18 [http-nio-8080-exec-8] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Dark",
+    "type": "twopart",
+    "setup": "What do an orgasm and a pulse have in common?",
+    "delivery": "I don't care if she has one.",
+    "flags": {
+        "nsfw": true,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": true
+    },
+    "id": 101,
+    "safe": false,
+    "lang": "en"
+}
+2021-11-15 09:27:18 [http-nio-8080-exec-8] DEBUG c.e.s.controller.MyRestController - Joke: What do an orgasm and a pulse have in common? - I don't care if she has one.
+Additions: { id: 101, type: twopart, category: Dark }
+2021-11-15 09:27:18 [http-nio-8080-exec-8] DEBUG c.e.s.controller.MyRestController - Joke length: 76
+2021-11-15 09:27:18 [http-nio-8080-exec-8] DEBUG c.e.s.controller.MyRestController - Reversed joke: .eno sah ehs fi erac t'nod I - ?nommoc ni evah eslup a dna msagro na od tahW
+2021-11-15 09:27:19 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "What do you call a cow with no legs?",
+    "delivery": "Ground beef.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 196,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 09:27:19 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Joke: What do you call a cow with no legs? - Ground beef.
+Additions: { id: 196, type: twopart, category: Pun }
+2021-11-15 09:27:19 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Joke length: 51
+2021-11-15 09:27:19 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Reversed joke: .feeb dnuorG - ?sgel on htiw woc a llac uoy od tahW
+2021-11-15 10:57:48 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m4s108ms484µs300ns).
+2021-11-15 11:10:00 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-15 11:10:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-11-15 11:10:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-11-15 11:10:04 [main] INFO  c.e.springapi.SpringapiApplication - Starting SpringapiApplication using Java 11.0.13 on n106435 with PID 10088 (C:\repos\springapi\target\classes started by amayachk in C:\repos\springapi)
+2021-11-15 11:10:04 [main] DEBUG c.e.springapi.SpringapiApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-15 11:10:04 [main] INFO  c.e.springapi.SpringapiApplication - No active profile set, falling back to default profiles: default
+2021-11-15 11:10:04 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-15 11:10:04 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+2021-11-15 11:10:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-15 11:10:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-15 11:10:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-15 11:10:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-15 11:10:05 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-15 11:10:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 874 ms
+2021-11-15 11:10:05 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-15 11:10:05 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-15 11:10:05 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-15 11:10:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-15 11:10:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-15 11:10:05 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-11-15 11:10:05 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-15 11:10:05 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-15 11:10:06 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-15 11:10:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-11-15 11:10:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-15 11:10:06 [main] INFO  c.e.springapi.SpringapiApplication - Started SpringapiApplication in 2.22 seconds (JVM running for 2.937)
+2021-11-15 11:10:09 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-15 11:10:09 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-15 11:10:09 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-11-15 11:10:18 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "Why shouldn't you visit an expensive wig shop?",
+    "delivery": "It's too high a price \"toupee.\"",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "safe": true,
+    "id": 268,
+    "lang": "en"
+}
+2021-11-15 11:10:19 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Joke: Why shouldn't you visit an expensive wig shop? - It's too high a price "toupee."
+Additions: { id: 268, type: twopart, category: Pun }
+2021-11-15 11:10:19 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Joke length: 80
+2021-11-15 11:10:19 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Reversed joke: ".eepuot" ecirp a hgih oot s'tI - ?pohs giw evisnepxe na tisiv uoy t'ndluohs yhW
+2021-11-15 11:10:23 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "Why do front end developers eat lunch alone?",
+    "delivery": "Because they don't know how to join tables.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 254,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 11:10:23 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke: Why do front end developers eat lunch alone? - Because they don't know how to join tables.
+Additions: { id: 254, type: twopart, category: Pun }
+2021-11-15 11:10:23 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke length: 90
+2021-11-15 11:10:23 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Reversed joke: .selbat nioj ot woh wonk t'nod yeht esuaceB - ?enola hcnul tae srepoleved dne tnorf od yhW
+2021-11-15 11:10:59 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-15 11:10:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-11-15 11:10:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-11-15 11:11:02 [main] INFO  c.e.springapi.SpringapiApplication - Starting SpringapiApplication using Java 11.0.13 on n106435 with PID 8504 (C:\repos\springapi\target\classes started by amayachk in C:\repos\springapi)
+2021-11-15 11:11:02 [main] DEBUG c.e.springapi.SpringapiApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-15 11:11:02 [main] INFO  c.e.springapi.SpringapiApplication - No active profile set, falling back to default profiles: default
+2021-11-15 11:11:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-15 11:11:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2021-11-15 11:11:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-15 11:11:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-15 11:11:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-15 11:11:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-15 11:11:02 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-15 11:11:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 755 ms
+2021-11-15 11:11:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-15 11:11:03 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-15 11:11:03 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-15 11:11:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-15 11:11:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-15 11:11:03 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-11-15 11:11:03 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-15 11:11:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-15 11:11:03 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-15 11:11:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-11-15 11:11:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-15 11:11:03 [main] INFO  c.e.springapi.SpringapiApplication - Started SpringapiApplication in 1.952 seconds (JVM running for 2.709)
+2021-11-15 11:11:05 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-15 11:11:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-15 11:11:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-11-15 11:11:05 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "Why should you never talk to pi?",
+    "delivery": "Because it will go on forever.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "safe": true,
+    "id": 318,
+    "lang": "en"
+}
+2021-11-15 11:11:05 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Joke: Why should you never talk to pi? - Because it will go on forever.
+Additions: { id: 318, type: twopart, category: Pun }
+2021-11-15 11:11:05 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Joke length: 65
+2021-11-15 11:11:05 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Reversed joke: .reverof no og lliw ti esuaceB - ?ip ot klat reven uoy dluohs yhW
+2021-11-15 11:11:07 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Spooky",
+    "type": "twopart",
+    "setup": "How do Rednecks celebrate Halloween?",
+    "delivery": "Pump kin!",
+    "flags": {
+        "nsfw": true,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": true
+    },
+    "safe": false,
+    "id": 300,
+    "lang": "en"
+}
+2021-11-15 11:11:07 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Joke: How do Rednecks celebrate Halloween? - Pump kin!
+Additions: { id: 300, type: twopart, category: Spooky }
+2021-11-15 11:11:07 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Joke length: 48
+2021-11-15 11:11:07 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Reversed joke: !nik pmuP - ?neewollaH etarbelec skcendeR od woH
+2021-11-15 11:11:08 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Programming",
+    "type": "single",
+    "joke": "Debugging: Removing the needles from the haystack.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 40,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 11:11:08 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke: Debugging: Removing the needles from the haystack.
+Additions: { id: 40, type: single, category: Programming }
+2021-11-15 11:11:08 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke length: 50
+2021-11-15 11:11:08 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Reversed joke: .kcatsyah eht morf seldeen eht gnivomeR :gniggubeD
+2021-11-15 11:14:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-15 11:14:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-11-15 11:14:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-11-15 11:14:05 [main] INFO  c.e.springapi.SpringapiApplication - Starting SpringapiApplication using Java 11.0.13 on n106435 with PID 11776 (C:\repos\springapi\target\classes started by amayachk in C:\repos\springapi)
+2021-11-15 11:14:05 [main] DEBUG c.e.springapi.SpringapiApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-15 11:14:05 [main] INFO  c.e.springapi.SpringapiApplication - No active profile set, falling back to default profiles: default
+2021-11-15 11:14:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-15 11:14:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+2021-11-15 11:14:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-15 11:14:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-15 11:14:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-15 11:14:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-15 11:14:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-15 11:14:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 643 ms
+2021-11-15 11:14:06 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-15 11:14:06 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-15 11:14:06 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-15 11:14:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-15 11:14:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-15 11:14:06 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-11-15 11:14:06 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-15 11:14:06 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-15 11:14:06 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-15 11:14:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-11-15 11:14:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-15 11:14:07 [main] INFO  c.e.springapi.SpringapiApplication - Started SpringapiApplication in 1.879 seconds (JVM running for 2.777)
+2021-11-15 11:14:09 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-15 11:14:09 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-15 11:14:09 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-11-15 11:14:09 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.example.springapi.controller.MyRestController.getAllJokes(MyRestController.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2021-11-15 11:14:14 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.example.springapi.controller.MyRestController.getAllJokes(MyRestController.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2021-11-15 11:14:26 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "single",
+    "joke": "Two fish in a tank. One turns to the other and says, \"Do you know how to drive this thing?\"",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 185,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 11:14:26 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke: Two fish in a tank. One turns to the other and says, "Do you know how to drive this thing?"
+Additions: { id: 185, type: single, category: Pun }
+2021-11-15 11:14:26 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke length: 91
+2021-11-15 11:14:26 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Reversed joke: "?gniht siht evird ot woh wonk uoy oD" ,syas dna rehto eht ot snrut enO .knat a ni hsif owT
+2021-11-15 11:14:26 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.example.springapi.controller.MyRestController.getJoke(MyRestController.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2021-11-15 11:14:40 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-15 11:14:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-11-15 11:14:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-11-15 11:14:44 [main] INFO  c.e.springapi.SpringapiApplication - Starting SpringapiApplication using Java 11.0.13 on n106435 with PID 16812 (C:\repos\springapi\target\classes started by amayachk in C:\repos\springapi)
+2021-11-15 11:14:44 [main] DEBUG c.e.springapi.SpringapiApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-15 11:14:44 [main] INFO  c.e.springapi.SpringapiApplication - No active profile set, falling back to default profiles: default
+2021-11-15 11:14:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-15 11:14:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+2021-11-15 11:14:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-15 11:14:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-15 11:14:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-15 11:14:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-15 11:14:44 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-15 11:14:44 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 657 ms
+2021-11-15 11:14:44 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-15 11:14:44 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-15 11:14:44 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-15 11:14:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-15 11:14:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-15 11:14:45 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-11-15 11:14:45 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-15 11:14:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-15 11:14:45 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-15 11:14:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-11-15 11:14:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-15 11:14:45 [main] INFO  c.e.springapi.SpringapiApplication - Started SpringapiApplication in 1.853 seconds (JVM running for 2.592)
+2021-11-15 11:14:48 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-15 11:14:48 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-15 11:14:48 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2021-11-15 11:14:48 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "Mickey Mouse and Minnie Mouse are in the divorce court.\n\"Mickey\", the judge says, \"I'm sorry. I can't grant you a divorce on the grounds of insanity. Minnie seems quite sane to me.\"",
+    "delivery": "\"I didn't say she was insane\", exclaims Mickey.\n\"I said she was fucking Goofy.\"",
+    "flags": {
+        "nsfw": true,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": true
+    },
+    "id": 225,
+    "safe": false,
+    "lang": "en"
+}
+2021-11-15 11:14:48 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Joke: Mickey Mouse and Minnie Mouse are in the divorce court.
+"Mickey", the judge says, "I'm sorry. I can't grant you a divorce on the grounds of insanity. Minnie seems quite sane to me." - "I didn't say she was insane", exclaims Mickey.
+"I said she was fucking Goofy."
+Additions: { id: 225, type: twopart, category: Pun }
+2021-11-15 11:14:48 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Joke length: 263
+2021-11-15 11:14:48 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Reversed joke: ".yfooG gnikcuf saw ehs dias I"
+.yekciM smialcxe ,"enasni saw ehs yas t'ndid I" - ".em ot enas etiuq smees einniM .ytinasni fo sdnuorg eht no ecrovid a uoy tnarg t'nac I .yrros m'I" ,syas egduj eht ,"yekciM"
+.truoc ecrovid eht ni era esuoM einniM dna esuoM yekciM
+2021-11-15 11:14:52 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Dark",
+    "type": "twopart",
+    "setup": "People are like jellybeans and licorice:",
+    "delivery": "No one likes the blacks.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": true,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 100,
+    "safe": false,
+    "lang": "en"
+}
+2021-11-15 11:14:52 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Joke: People are like jellybeans and licorice: - No one likes the blacks.
+Additions: { id: 100, type: twopart, category: Dark }
+2021-11-15 11:14:52 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Joke length: 67
+2021-11-15 11:14:52 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Reversed joke: .skcalb eht sekil eno oN - :ecirocil dna snaebyllej ekil era elpoeP
+2021-11-15 11:14:53 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "single",
+    "joke": "To whoever stole my copy of Microsoft Office, I will find you. You have my Word!",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 191,
+    "safe": true,
+    "lang": "en"
+}
+2021-11-15 11:14:53 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke: To whoever stole my copy of Microsoft Office, I will find you. You have my Word!
+Additions: { id: 191, type: single, category: Pun }
+2021-11-15 11:14:53 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke length: 80
+2021-11-15 11:14:53 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Reversed joke: !droW ym evah uoY .uoy dnif lliw I ,eciffO tfosorciM fo ypoc ym elots reveohw oT
+2021-11-15 14:06:12 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-15 14:06:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-11-15 14:06:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-11-15 14:06:15 [main] INFO  c.e.springapi.SpringapiApplication - Starting SpringapiApplication using Java 11.0.13 on n106435 with PID 12332 (C:\repos\springapi\target\classes started by amayachk in C:\repos\springapi)
+2021-11-15 14:06:15 [main] DEBUG c.e.springapi.SpringapiApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-15 14:06:15 [main] INFO  c.e.springapi.SpringapiApplication - No active profile set, falling back to default profiles: default
+2021-11-15 14:06:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-15 14:06:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+2021-11-15 14:06:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-15 14:06:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-15 14:06:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-15 14:06:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-15 14:06:16 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-15 14:06:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 676 ms
+2021-11-15 14:06:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-15 14:06:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-15 14:06:16 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-15 14:06:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-15 14:06:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-15 14:06:17 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-11-15 14:06:17 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-15 14:06:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-15 14:06:17 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-15 14:06:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-11-15 14:06:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-15 14:06:18 [main] INFO  c.e.springapi.SpringapiApplication - Started SpringapiApplication in 2.326 seconds (JVM running for 3.031)
+2021-11-15 14:06:19 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-15 14:06:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-15 14:06:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2021-11-15 14:07:13 [http-nio-8080-exec-6] ERROR c.e.s.controller.MyRestController - For input string: "typed"
+java.lang.NumberFormatException: For input string: "typed"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.example.springapi.controller.MyRestController.getJokeById(MyRestController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2021-11-15 14:07:26 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Dark",
+    "type": "single",
+    "joke": "Me and my Jewish friend were eating lunch and I farted. He got mad so I said \"cmon man a little gas never killed anyone\".",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": true,
+        "sexist": false,
+        "explicit": true
+    },
+    "id": 103,
+    "safe": false,
+    "lang": "en"
+}
+2021-11-15 14:07:26 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Joke: Me and my Jewish friend were eating lunch and I farted. He got mad so I said "cmon man a little gas never killed anyone".
+Additions: { id: 103, type: single, category: Dark }
+2021-11-15 14:07:26 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Joke length: 121
+2021-11-15 14:07:26 [http-nio-8080-exec-9] DEBUG c.e.s.controller.MyRestController - Reversed joke: ."enoyna dellik reven sag elttil a nam nomc" dias I os dam tog eH .detraf I dna hcnul gnitae erew dneirf hsiweJ ym dna eM
+2021-11-15 14:07:29 [http-nio-8080-exec-10] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Dark",
+    "type": "twopart",
+    "setup": "What is the difference between acne and a catholic priest?",
+    "delivery": "Acne usually comes on a boys face after he turns 12.",
+    "flags": {
+        "nsfw": true,
+        "religious": true,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": true
+    },
+    "id": 159,
+    "safe": false,
+    "lang": "en"
+}
+2021-11-15 14:07:29 [http-nio-8080-exec-10] DEBUG c.e.s.controller.MyRestController - Joke: What is the difference between acne and a catholic priest? - Acne usually comes on a boys face after he turns 12.
+Additions: { id: 159, type: twopart, category: Dark }
+2021-11-15 14:07:29 [http-nio-8080-exec-10] DEBUG c.e.s.controller.MyRestController - Joke length: 113
+2021-11-15 14:07:29 [http-nio-8080-exec-10] DEBUG c.e.s.controller.MyRestController - Reversed joke: .21 snrut eh retfa ecaf syob a no semoc yllausu encA - ?tseirp cilohtac a dna enca neewteb ecnereffid eht si tahW
+2021-11-15 14:07:30 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Dark",
+    "type": "twopart",
+    "setup": "How many Jews can you fit into a car?",
+    "delivery": "Two in the front, three in the back, and a hundred in the ashtray.",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": true,
+        "sexist": false,
+        "explicit": true
+    },
+    "id": 173,
+    "safe": false,
+    "lang": "en"
+}
+2021-11-15 14:07:30 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Joke: How many Jews can you fit into a car? - Two in the front, three in the back, and a hundred in the ashtray.
+Additions: { id: 173, type: twopart, category: Dark }
+2021-11-15 14:07:30 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Joke length: 106
+2021-11-15 14:07:30 [http-nio-8080-exec-1] DEBUG c.e.s.controller.MyRestController - Reversed joke: .yarthsa eht ni derdnuh a dna ,kcab eht ni eerht ,tnorf eht ni owT - ?rac a otni tif uoy nac sweJ ynam woH
+2021-11-15 14:07:31 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "How does a Jewish person make tea?",
+    "delivery": "Hebrews it.",
+    "flags": {
+        "nsfw": false,
+        "religious": true,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 131,
+    "safe": false,
+    "lang": "en"
+}
+2021-11-15 14:07:31 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Joke: How does a Jewish person make tea? - Hebrews it.
+Additions: { id: 131, type: twopart, category: Pun }
+2021-11-15 14:07:31 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Joke length: 48
+2021-11-15 14:07:31 [http-nio-8080-exec-2] DEBUG c.e.s.controller.MyRestController - Reversed joke: .ti swerbeH - ?aet ekam nosrep hsiweJ a seod woH
+2021-11-15 14:07:33 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "Mickey Mouse and Minnie Mouse are in the divorce court.\n\"Mickey\", the judge says, \"I'm sorry. I can't grant you a divorce on the grounds of insanity. Minnie seems quite sane to me.\"",
+    "delivery": "\"I didn't say she was insane\", exclaims Mickey.\n\"I said she was fucking Goofy.\"",
+    "flags": {
+        "nsfw": true,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": true
+    },
+    "id": 225,
+    "safe": false,
+    "lang": "en"
+}
+2021-11-15 14:07:33 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke: Mickey Mouse and Minnie Mouse are in the divorce court.
+"Mickey", the judge says, "I'm sorry. I can't grant you a divorce on the grounds of insanity. Minnie seems quite sane to me." - "I didn't say she was insane", exclaims Mickey.
+"I said she was fucking Goofy."
+Additions: { id: 225, type: twopart, category: Pun }
+2021-11-15 14:07:33 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Joke length: 263
+2021-11-15 14:07:33 [http-nio-8080-exec-3] DEBUG c.e.s.controller.MyRestController - Reversed joke: ".yfooG gnikcuf saw ehs dias I"
+.yekciM smialcxe ,"enasni saw ehs yas t'ndid I" - ".em ot enas etiuq smees einniM .ytinasni fo sdnuorg eht no ecrovid a uoy tnarg t'nac I .yrros m'I" ,syas egduj eht ,"yekciM"
+.truoc ecrovid eht ni era esuoM einniM dna esuoM yekciM
+2021-11-15 14:07:42 [http-nio-8080-exec-4] DEBUG c.e.s.controller.MyRestController - {
+    "error": false,
+    "category": "Dark",
+    "type": "single",
+    "joke": "Doctor: \"I have some news about your baby.\"\nParents: \"Don't tell us the gender, we want to keep it a surprise.\"\nDoctor: \"Oh I get it, you're those type of people. Okay, well IT is not breathing.\"",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 138,
+    "safe": false,
+    "lang": "en"
+}
+2021-11-15 14:07:42 [http-nio-8080-exec-4] DEBUG c.e.s.controller.MyRestController - Joke: Doctor: "I have some news about your baby."
+Parents: "Don't tell us the gender, we want to keep it a surprise."
+Doctor: "Oh I get it, you're those type of people. Okay, well IT is not breathing."
+Additions: { id: 138, type: single, category: Dark }
+2021-11-15 14:07:42 [http-nio-8080-exec-4] DEBUG c.e.s.controller.MyRestController - Joke length: 195
+2021-11-15 14:07:42 [http-nio-8080-exec-4] DEBUG c.e.s.controller.MyRestController - Reversed joke: ".gnihtaerb ton si TI llew ,yakO .elpoep fo epyt esoht er'uoy ,ti teg I hO" :rotcoD
+".esirprus a ti peek ot tnaw ew ,redneg eht su llet t'noD" :stneraP
+".ybab ruoy tuoba swen emos evah I" :rotcoD

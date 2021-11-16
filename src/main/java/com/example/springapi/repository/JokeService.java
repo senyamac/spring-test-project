@@ -9,27 +9,66 @@
 
 package com.example.springapi.repository;
 
-import com.example.springapi.models.Joke;
+import com.example.springapi.models.JokeEntity;
+import com.example.springapi.models.JokeLength;
+import com.example.springapi.models.ReverseJoke;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
 public class JokeService {
-  private JokeRepository jokeRepository;
+  private static final Logger LOGGER = LoggerFactory.getLogger(JokeService.class);
+
+  private final JokeRepository jokeRepository;
+  private final JokeLength jokeLength;
+  private final ReverseJoke reverseJoke;
 
   public JokeService(JokeRepository jokeRepository) {
     this.jokeRepository = jokeRepository;
+    jokeLength = new JokeLength();
+    reverseJoke = new ReverseJoke();
   }
 
-  public void saveJoke(Joke joke) {
-    jokeRepository.save(joke);
+  public String getReversedJoke(JokeEntity jokeEntity) {
+    String result = reverseJoke.actionWithJoke(jokeEntity);
+    LOGGER.debug(result);
+    return result;
   }
 
-  public List<Joke> findAll() {
+  public String getJokeLength(JokeEntity jokeEntity) {
+    String result = jokeLength.actionWithJoke(jokeEntity);
+    LOGGER.debug(result);
+    return result;
+  }
+
+  public String parseAndSaveJoke(String jokeMessage) {
+    String resultJoke;
+    ObjectMapper mapper = new ObjectMapper();
+    try {
+      JokeEntity jokeEntity = mapper.readValue(jokeMessage, JokeEntity.class);
+      resultJoke = jokeEntity.toString();
+      LOGGER.debug(resultJoke);
+      jokeRepository.save(jokeEntity);
+      return resultJoke;
+    } catch (JsonProcessingException e) {
+      LOGGER.error(e.getMessage(), e);
+    }
+    return null;
+  }
+
+  public List<JokeEntity> getAllJokes() {
     return jokeRepository.findAll();
   }
 
-  public Joke findById(int id) {
+  public List<JokeEntity> findJokeByType(String type) {
+    return jokeRepository.findByType(type);
+  }
+
+  public JokeEntity findJokeById(int id) {
     return jokeRepository.findById(id).orElse(null);
   }
 }

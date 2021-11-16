@@ -5,8 +5,8 @@ import lombok.NonNull;
 
 public class JokeLength implements IJokeAction {
   @Override
-  public String actionWithJoke(@NonNull Joke joke) {
-    String strJoke = joke.getJoke();
+  public String actionWithJoke(@NonNull JokeEntity jokeEntity) {
+    String strJoke = jokeEntity.getJoke();
     return "Joke length: " + strJoke.length();
   }
 }

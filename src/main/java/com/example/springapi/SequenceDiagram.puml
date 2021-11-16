@@ -1,11 +1,23 @@
 @startuml
-'https://plantuml.com/sequence-diagram
+participant Controller as control
+participant JokeService as js
+participant Joke as j
+participant JokeRepository as jr
+database Postgres as db
+participant API
 
 autonumber
 
-Alice -> Alice: Authentication Request
-Bob --> Alice: Authentication Response
+group get new joke
+control -> API: Get Joke Request
+control <-- API: Response with Joke json
+control -> js: Parse and save Joke
+js -> j: create Joke
+js <-- j: return Joke entity
+js -> jr: save Joke to Database
+jr -> db: save Joke entity
+js <-- db
+control <-- js: return Joke string
+end
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
 @enduml
