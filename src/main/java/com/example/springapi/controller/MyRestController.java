@@ -53,7 +53,7 @@ public class MyRestController {
   }
 
   @RequestMapping("/jokebase/length/{subpath}")
-  public ResponseEntity<String> getLengthOfJokeById(@PathVariable("subpath") String subpath) {
+  public ResponseEntity<String> getJokeLengthById(@PathVariable("subpath") String subpath) {
     int id = 0;
     try {
       id = Integer.parseInt(subpath);
