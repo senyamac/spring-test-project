@@ -18,15 +18,6 @@ public class MyRestController {
   @Autowired
   JokeService jokeService;
 
-  @RequestMapping("/joke")
-  public ResponseEntity<String> jokeProcess() {
-    JokeEntity joke = jokeService.getNewJoke();
-    jokeService.saveJoke(joke);
-    String reversedJoke = jokeService.getReversedJoke(joke);
-    String jokeLength = jokeService.getJokeLength(joke);
-    return new ResponseEntity<>( joke + reversedJoke + jokeLength, HttpStatus.OK);
-  }
-
   @RequestMapping("/jokebase/typed/{subpath}")
   public ResponseEntity<List<JokeEntity>> getJokesByType(@PathVariable("subpath") String subpath) {
     List<JokeEntity> jokeEntities = new ArrayList<>(jokeService.findJokeByType(subpath));
@@ -38,25 +29,22 @@ public class MyRestController {
 
   @RequestMapping("/jokebase")
   public ResponseEntity<List<JokeEntity>> getAllJokes() {
-    List<JokeEntity> jokeEntities;
-    jokeEntities = new ArrayList<>(jokeService.getAllJokes());
+    List<JokeEntity> jokeEntities = new ArrayList<>(jokeService.getAllJokes());
     if (jokeEntities.isEmpty()) {
       return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-
     return new ResponseEntity<>(jokeEntities, HttpStatus.OK);
   }
 
   @RequestMapping("/jokebase/{subpath}")
-  public ResponseEntity<JokeEntity>  getJokeById(@PathVariable("subpath") String subpath) {
+  public ResponseEntity<JokeEntity> getJokeById(@PathVariable("subpath") String subpath) {
     int id = 0;
-    JokeEntity jokeEntity;
     try {
       id = Integer.parseInt(subpath);
     } catch (NumberFormatException e) {
       log.error(e.getMessage(), e);
     }
-    jokeEntity = jokeService.findJokeById(id);
+    JokeEntity jokeEntity = jokeService.findJokeById(id);
     if (jokeEntity == null) {
       return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     } else {
@@ -65,15 +53,14 @@ public class MyRestController {
   }
 
   @RequestMapping("/jokebase/length/{subpath}")
-  public ResponseEntity<String>  getLengthJokeById(@PathVariable("subpath") String subpath) {
+  public ResponseEntity<String> getLengthJokeById(@PathVariable("subpath") String subpath) {
     int id = 0;
-    JokeEntity jokeEntity;
     try {
       id = Integer.parseInt(subpath);
     } catch (NumberFormatException e) {
       log.error(e.getMessage(), e);
     }
-    jokeEntity = jokeService.findJokeById(id);
+    JokeEntity jokeEntity = jokeService.findJokeById(id);
     if (jokeEntity == null) {
       return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     } else {
@@ -82,15 +69,14 @@ public class MyRestController {
   }
 
   @RequestMapping("/jokebase/reverse/{subpath}")
-  public ResponseEntity<String>  getReversedJokeById(@PathVariable("subpath") String subpath) {
+  public ResponseEntity<String> getReversedJokeById(@PathVariable("subpath") String subpath) {
     int id = 0;
-    JokeEntity jokeEntity;
     try {
       id = Integer.parseInt(subpath);
     } catch (NumberFormatException e) {
       log.error(e.getMessage(), e);
     }
-    jokeEntity = jokeService.findJokeById(id);
+    JokeEntity jokeEntity = jokeService.findJokeById(id);
     if (jokeEntity == null) {
       return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     } else {
