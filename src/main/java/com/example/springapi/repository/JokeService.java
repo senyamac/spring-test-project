@@ -12,17 +12,19 @@ package com.example.springapi.repository;
 import com.example.springapi.models.JokeEntity;
 import com.example.springapi.models.JokeLength;
 import com.example.springapi.models.ReverseJoke;
+import com.example.springapi.util.AppConst;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.List;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.NonNull;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
+@Slf4j
 @Service
 public class JokeService {
-  private static final Logger LOGGER = LoggerFactory.getLogger(JokeService.class);
-
+  private final RestTemplate restTemplate;
   private final JokeRepository jokeRepository;
   private final JokeLength jokeLength;
   private final ReverseJoke reverseJoke;
@@ -31,33 +33,37 @@ public class JokeService {
     this.jokeRepository = jokeRepository;
     jokeLength = new JokeLength();
     reverseJoke = new ReverseJoke();
+    restTemplate = new RestTemplate();
   }
 
   public String getReversedJoke(JokeEntity jokeEntity) {
     String result = reverseJoke.actionWithJoke(jokeEntity);
-    LOGGER.debug(result);
+    log.debug(result);
     return result;
   }
 
   public String getJokeLength(JokeEntity jokeEntity) {
     String result = jokeLength.actionWithJoke(jokeEntity);
-    LOGGER.debug(result);
+    log.debug(result);
     return result;
   }
 
-  public String parseAndSaveJoke(String jokeMessage) {
-    String resultJoke;
+  public JokeEntity getNewJoke() {
+    String message = restTemplate.getForObject(AppConst.URL_API, String.class);
+    log.debug(message);
     ObjectMapper mapper = new ObjectMapper();
+    JokeEntity jokeEntity  = new JokeEntity();
     try {
-      JokeEntity jokeEntity = mapper.readValue(jokeMessage, JokeEntity.class);
-      resultJoke = jokeEntity.toString();
-      LOGGER.debug(resultJoke);
-      jokeRepository.save(jokeEntity);
-      return resultJoke;
+      jokeEntity = mapper.readValue(message, JokeEntity.class);
+      log.debug(jokeEntity.toString());
     } catch (JsonProcessingException e) {
-      LOGGER.error(e.getMessage(), e);
+      log.error(e.getMessage(), e);
     }
-    return null;
+    return jokeEntity;
+  }
+
+  public void saveJoke(@NonNull JokeEntity jokeEntity) {
+    jokeRepository.save(jokeEntity);
   }
 
   public List<JokeEntity> getAllJokes() {

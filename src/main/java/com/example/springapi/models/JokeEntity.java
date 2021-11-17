@@ -15,37 +15,24 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Getter
+@Setter
 @Entity
 @Table(name = "jokes")
-@AllArgsConstructor
-@NoArgsConstructor
 public class JokeEntity {
   @Id
-  @Getter
-  @Setter
   private int id;
-  @Getter
-  @Setter
   @Column(name="category")
   private String category;
-  @Getter
-  @Setter
   @Column(name="type")
   private String type;
-  @Setter
   @Column(name="joke")
   private String joke;
-  @Getter
-  @Setter
   private String setup;
-  @Getter
-  @Setter
   private String delivery;
 
   public String getJoke() {
