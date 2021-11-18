@@ -5,8 +5,8 @@ import lombok.NonNull;
 
 public class ReverseJoke implements IJokeAction {
   @Override
-  public String actionWithJoke(@NonNull JokeEntity jokeEntity) {
-    String strJoke = jokeEntity.getJoke();
+  public String actionWithJoke(@NonNull Joke joke) {
+    String strJoke = joke.getJoke();
     return "Reversed joke: " + new StringBuilder(strJoke).reverse();
   }
 }

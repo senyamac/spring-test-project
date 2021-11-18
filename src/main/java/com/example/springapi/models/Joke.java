@@ -15,15 +15,13 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-@Getter
-@Setter
+@Data
 @Entity
 @Table(name = "jokes")
-public class JokeEntity {
+public class Joke {
   @Id
   private int id;
   @Column(name="category")
@@ -34,6 +32,7 @@ public class JokeEntity {
   private String joke;
   private String setup;
   private String delivery;
+
 
   public String getJoke() {
     switch (type) {

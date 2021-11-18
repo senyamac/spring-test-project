@@ -9,72 +9,27 @@
 
 package com.example.springapi.repository;
 
-import com.example.springapi.models.JokeEntity;
-import com.example.springapi.models.JokeLength;
-import com.example.springapi.models.ReverseJoke;
-import com.example.springapi.util.AppConst;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.example.springapi.models.Joke;
 import java.util.List;
-import lombok.NonNull;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
-@Slf4j
 @Service
 public class JokeService {
-  private final RestTemplate restTemplate;
-  private final JokeRepository jokeRepository;
-  private final JokeLength jokeLength;
-  private final ReverseJoke reverseJoke;
+  private JokeRepository jokeRepository;
 
   public JokeService(JokeRepository jokeRepository) {
     this.jokeRepository = jokeRepository;
-    jokeLength = new JokeLength();
-    reverseJoke = new ReverseJoke();
-    restTemplate = new RestTemplate();
   }
 
-  public String getReversedJoke(JokeEntity jokeEntity) {
-    String result = reverseJoke.actionWithJoke(jokeEntity);
-    log.debug(result);
-    return result;
+  public void saveJoke(Joke joke) {
+    jokeRepository.save(joke);
   }
 
-  public String getJokeLength(JokeEntity jokeEntity) {
-    String result = jokeLength.actionWithJoke(jokeEntity);
-    log.debug(result);
-    return result;
-  }
-
-  public JokeEntity getNewJoke() {
-    String message = restTemplate.getForObject(AppConst.URL_API, String.class);
-    log.debug(message);
-    ObjectMapper mapper = new ObjectMapper();
-    JokeEntity jokeEntity  = new JokeEntity();
-    try {
-      jokeEntity = mapper.readValue(message, JokeEntity.class);
-      log.debug(jokeEntity.toString());
-    } catch (JsonProcessingException e) {
-      log.error(e.getMessage(), e);
-    }
-    return jokeEntity;
-  }
-
-  public void saveJoke(@NonNull JokeEntity jokeEntity) {
-    jokeRepository.save(jokeEntity);
-  }
-
-  public List<JokeEntity> getAllJokes() {
+  public List<Joke> findAll() {
     return jokeRepository.findAll();
   }
 
-  public List<JokeEntity> findJokeByType(String type) {
-    return jokeRepository.findByType(type);
-  }
-
-  public JokeEntity findJokeById(int id) {
+  public Joke findById(int id) {
     return jokeRepository.findById(id).orElse(null);
   }
 }
