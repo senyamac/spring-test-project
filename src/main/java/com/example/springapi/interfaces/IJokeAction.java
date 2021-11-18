@@ -1,7 +1,7 @@
 package com.example.springapi.interfaces;
 
-import com.example.springapi.models.Joke;
+import com.example.springapi.models.JokeEntity;
 
 public interface IJokeAction {
-  public String actionWithJoke(Joke joke);
+  String actionWithJoke(JokeEntity jokeEntity);
 }

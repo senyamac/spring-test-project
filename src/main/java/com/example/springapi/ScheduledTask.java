@@ -7,12 +7,24 @@
  * owner.
  */
 
-package com.example.springapi.repository;
+package com.example.springapi;
 
 import com.example.springapi.models.JokeEntity;
-import java.util.List;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.example.springapi.repository.JokeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 
-public interface JokeRepository  extends JpaRepository<JokeEntity, Integer> {
-  List<JokeEntity> findByType(String type);
+@Component
+public class ScheduledTask {
+  @Autowired
+  JokeService jokeService;
+
+  @Scheduled(fixedDelay = 3000)
+  public void jokeProcess() {
+    JokeEntity joke = jokeService.getNewJoke();
+    jokeService.saveJoke(joke);
+    jokeService.getReversedJoke(joke);
+    jokeService.getJokeLength(joke);
+  }
 }

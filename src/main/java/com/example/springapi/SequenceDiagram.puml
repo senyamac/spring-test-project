@@ -1,11 +1,51 @@
 @startuml
-'https://plantuml.com/sequence-diagram
+participant ScheduledTask as st
+participant JokeService as js
+participant Joke as j
+participant ReverseJoke as rj
+participant JokeLength as jl
+participant JokeRepository as jr
+database Postgres as db
+participant API
 
 autonumber
 
-Alice -> Alice: Authentication Request
-Bob --> Alice: Authentication Response
+st -> js: getNewJoke()
+activate js
+js -> API: Get Joke Request
+activate API
+js <-- API: Response with Joke json
+deactivate API
+js -> j: new JokeEntity()
+activate j
+js <-- j: return JokeEntity
+deactivate j
+st <-- js: return JokeEntity
+deactivate js
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+st -> js: saveJoke()
+activate js
+js -> jr: save JokeEntity to Database
+jr -> db: save Joke entity
+
+deactivate js
+
+st -> js: getReversedJoke(JokeEntity)
+activate js
+js -> rj: actionWithJoke((JokeEntity)
+activate rj
+js <- rj: String with reversed joke
+deactivate rj
+st <-- js: String with reversed joke
+deactivate js
+
+st -> js: getJokeLength(JokeEntity)
+activate js
+js -> jl: actionWithJoke((JokeEntity)
+activate jl
+js <-- jl: String with joke length
+deactivate jl
+st <-- js: String with joke length
+deactivate js
+
 @enduml
